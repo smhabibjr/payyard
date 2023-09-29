@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Payyard.io
         </q-toolbar-title>
 
         <div>
@@ -66,22 +66,28 @@ import { useQuasar } from 'quasar';
 
 const linksList = [
   {
-    title: 'Docs',
+    title: 'Dashboard',
     caption: 'quasar.dev',
-    icon: 'school',
+    icon: 'dashboard ',
     link: 'https://quasar.dev',
   },
   {
-    title: 'Github',
+    title: 'My Clients',
+    caption: 'chat.quasar.dev',
+    icon: 'people',
+    link: 'https://chat.quasar.dev',
+  },
+  {
+    title: 'Send Invoice',
     caption: 'github.com/quasarframework',
-    icon: 'code',
+    icon: 'description',
     link: 'https://github.com/quasarframework',
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev',
+    title: 'Withdraw to Bank',
+    caption: 'github.com/quasarframework',
+    icon: 'account_balance',
+    link: 'https://github.com/quasarframework',
   },
   {
     title: 'Forum',
@@ -90,22 +96,16 @@ const linksList = [
     link: 'https://forum.quasar.dev',
   },
   {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev',
+    title: 'Settings',
+    caption: 'forum.quasar.dev',
+    icon: 'settings',
+    link: 'https://forum.quasar.dev',
   },
   {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev',
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev',
+    title: 'Logout',
+    caption: 'forum.quasar.dev',
+    icon: 'exit_to_app',
+    link: 'https://forum.quasar.dev',
   },
 ];
 
