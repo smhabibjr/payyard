@@ -1,19 +1,19 @@
 <template>
-  <q-page>
-    <div>
-      <h1>{{ pageTitle }}</h1>
-    </div>
+  <q-page class="q-ma-md">
+    <PageTitle :title="pageTitle" />
   </q-page>
 </template>
 
 <script lang="ts">
 
+import PageTitle from 'src/components/PageTitle.vue';
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   name: 'MyClientsPage',
+  components: { PageTitle },
   setup() {
-    const pageTitle = ref('This is my client page!');
+    const pageTitle = ref('My Clients');
     return {
       pageTitle,
     };

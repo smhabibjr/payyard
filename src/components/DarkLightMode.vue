@@ -5,7 +5,7 @@
       color="dark"
       keep-color
     />
-    Dark Page
+    Dark
   </div>
 </template>
 

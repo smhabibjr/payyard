@@ -1,20 +1,22 @@
 <template>
-  <q-page>
-    <div>
-      <h5> {{ title }} </h5>
-    </div>
+  <q-page class="q-ma-md">
+    <PageTitle :title="pageTitle" />
   </q-page>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import PageTitle from 'src/components/PageTitle.vue';
 
 export default defineComponent({
   name: 'CashWithdraw',
+  components: {
+    PageTitle,
+  },
   setup() {
-    const title = ref('Cash your withdraw');
+    const pageTitle = ref('Cash Withdraw');
     return {
-      title,
+      pageTitle,
     };
   },
 });

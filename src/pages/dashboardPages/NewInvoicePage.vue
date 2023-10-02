@@ -1,19 +1,20 @@
 <template>
-  <q-page>
-    <div>
-      <h6> {{ pageTitle }} </h6>
-    </div>
+  <q-page class="q-ma-md">
+    <PageTitle :title="pageTitle" />
   </q-page>
 </template>
 
 <script lang="ts">
+import PageTitle from 'src/components/PageTitle.vue';
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   name: 'NewInvoicePage',
-  // components: [ goes to here! ]
+  components: {
+    PageTitle,
+  },
   setup() {
-    const pageTitle = ref('Create invoice page');
+    const pageTitle = ref('Create Invoice');
     return {
       pageTitle,
     };
