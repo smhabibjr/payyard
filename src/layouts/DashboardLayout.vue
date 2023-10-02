@@ -27,17 +27,7 @@
       bordered
     >
       <q-list>
-        <q-item-section class="flex flex-center q-mt-md" avatar>
-          <q-avatar size="100px">
-            <img src="https://cdn.quasar.dev/img/avatar.png">
-          </q-avatar>
-        </q-item-section>
-
-        <q-item-label class="flex flex-center" header>
-          Md Habibur Rahman Habib
-          <span>Payyard ID: 0961898</span>
-        </q-item-label>
-
+        <ProfileAvator />
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
@@ -57,6 +47,7 @@
 import { defineComponent, ref } from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
 import DarkLightMode from 'src/components/DarkLightMode.vue';
+import ProfileAvator from 'src/components/ProfileAvator.vue';
 
 const linksList = [
   {
@@ -115,6 +106,7 @@ export default defineComponent({
   components: {
     EssentialLink,
     DarkLightMode,
+    ProfileAvator,
   },
 
   setup() {
