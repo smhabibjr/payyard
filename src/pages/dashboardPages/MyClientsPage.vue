@@ -1,6 +1,6 @@
 <template>
   <q-page class="q-ma-md">
-    <PageTitle :title="pageTitle" />
+    <page-title :title="pageTitle" />
   </q-page>
 </template>
 
