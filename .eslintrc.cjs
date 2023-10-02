@@ -65,6 +65,7 @@ module.exports = {
   // add your custom rules here
   rules: {
 
+    'no-console': 'off',
     'no-param-reassign': 'off',
     'no-void': 'off',
     'no-nested-ternary': 'off',

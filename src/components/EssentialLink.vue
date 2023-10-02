@@ -2,7 +2,6 @@
   <q-item
     clickable
     tag="a"
-    target="_blank"
     :href="link"
   >
     <q-item-section
@@ -20,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted } from 'vue';
 
 export default defineComponent({
   name: 'EssentialLink',
@@ -44,6 +43,15 @@ export default defineComponent({
       type: String,
       default: '',
     },
+  },
+  setup(props) {
+    onMounted(() => {
+      console.log('hi there !');
+      console.log(props);
+    });
+    return {
+
+    };
   },
 });
 </script>

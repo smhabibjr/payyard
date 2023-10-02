@@ -15,7 +15,7 @@ import ExampleComponent from 'components/ExampleComponent.vue';
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  name: 'IndexPage',
+  name: 'DashboardPage',
   components: { ExampleComponent },
   setup() {
     const todos = ref<Todo[]>([
