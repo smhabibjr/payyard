@@ -12,6 +12,8 @@
           Title
         </q-toolbar-title>
 
+        <DarkLightMode />
+
         <q-btn dense flat round icon="menu" @click="toggleRightDrawer" />
       </q-toolbar>
     </q-header>
@@ -43,9 +45,15 @@
 </template>
 
 <script lang="ts">
-import { ref } from 'vue';
+import { defineComponent, ref } from 'vue';
+import DarkLightMode from 'src/components/DarkLightMode.vue';
 
-export default {
+export default defineComponent({
+  name: 'BlogPostLayout',
+  components: {
+    DarkLightMode,
+  },
+
   setup() {
     const leftDrawerOpen = ref(false);
     const rightDrawerOpen = ref(false);
@@ -60,7 +68,8 @@ export default {
       toggleRightDrawer() {
         rightDrawerOpen.value = !rightDrawerOpen.value;
       },
+      DarkLightMode,
     };
   },
-};
+});
 </script>

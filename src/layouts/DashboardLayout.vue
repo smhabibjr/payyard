@@ -15,14 +15,8 @@
           Payyard.io
         </q-toolbar-title>
 
-        <div>
-          <q-toggle
-            v-model="darkMode"
-            color="dark"
-            keep-color
-          />
-          Dark Page
-        </div>
+        <DarkLightMode />
+
         <!--<div>Quasar v{{ $q.version }}</div>-->
       </q-toolbar>
     </q-header>
@@ -60,9 +54,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, watch } from 'vue';
+import { defineComponent, ref } from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
-import { useQuasar } from 'quasar';
+import DarkLightMode from 'src/components/DarkLightMode.vue';
 
 const linksList = [
   {
@@ -120,16 +114,11 @@ export default defineComponent({
 
   components: {
     EssentialLink,
+    DarkLightMode,
   },
 
   setup() {
     const leftDrawerOpen = ref(false);
-    const $q = useQuasar();
-    const darkMode = ref(false);
-
-    watch(darkMode, () => {
-      $q.dark.set(darkMode.value);
-    });
 
     const toggleLeftDrawer = () => {
       leftDrawerOpen.value = !leftDrawerOpen.value;
@@ -139,7 +128,6 @@ export default defineComponent({
       essentialLinks: linksList,
       leftDrawerOpen,
       toggleLeftDrawer,
-      darkMode,
     };
   },
 });
