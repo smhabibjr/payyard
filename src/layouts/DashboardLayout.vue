@@ -96,6 +96,12 @@ const linksList = [
     link: '#/community-forum',
   },
   {
+    title: 'Blog',
+    caption: 'Read & Write Blog',
+    icon: 'create',
+    link: '#/blog/',
+  },
+  {
     title: 'Settings',
     caption: '',
     icon: 'settings',
@@ -110,7 +116,7 @@ const linksList = [
 ];
 
 export default defineComponent({
-  name: 'MainLayout',
+  name: 'DashboardLayout',
 
   components: {
     EssentialLink,
