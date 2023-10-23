@@ -5,6 +5,7 @@
     <div class="shadow-up-1 q-mt-sm">
       <div class="q-pa-md">
         <ProfileAvator />
+        <h5>counter : {{ counter }}</h5>
       </div>
       <div class="q-pa-md q-gutter-sm">
         <q-btn @click="SelectedElement = 'PersonalData'" label="Personal Data" />
@@ -53,7 +54,7 @@
 
 <script lang="ts">
 
-import { defineComponent, ref } from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import PageTitle from 'src/components/PageTitle.vue';
 import ProfileAvator from 'src/components/ProfileAvator.vue';
 import PersonalData from 'src/components/SettingsComponent/PersonalData.vue';
@@ -84,9 +85,16 @@ export default defineComponent({
   setup() {
     const pageTitle = ref('My Account');
     const SelectedElement = ref('PersonalData');
+    const counter = ref(0);
+    // eslint-disable-next-line no-plusplus
+    const counterIncrementer = () => counter.value++;
+    onMounted(() => {
+      setInterval(counterIncrementer, 1000);
+    });
     return {
       pageTitle,
       SelectedElement,
+      counter,
     };
   },
 });

@@ -45,12 +45,7 @@ export default defineComponent({
     },
   },
   setup(props) {
-    onMounted(() => {
-      console.log('hi there !');
-      console.log(props);
-    });
     return {
-
     };
   },
 });
