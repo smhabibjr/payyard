@@ -1,4 +1,4 @@
-# A payment soluations. (payyard.io)
+# A payment solution for freelancers.
 
 A Quasar Project
 
