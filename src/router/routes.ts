@@ -3,9 +3,16 @@ import { RouteRecordRaw } from 'vue-router';
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
+    component: () => import('layouts/HomeLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/HomePage/HomePage.vue') },
+    ],
+  },
+  {
+    path: '/',
     component: () => import('layouts/DashboardLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/dashboardPages/DashboardPage.vue') },
+      { path: 'dashboard', component: () => import('pages/dashboardPages/DashboardPage.vue') },
       { path: 'my-clients', component: () => import('pages/dashboardPages/MyClientsPage.vue') },
       { path: 'new-invoice', component: () => import('pages/dashboardPages/NewInvoicePage.vue') },
       { path: 'cash-withdraw', component: () => import('pages/dashboardPages/CashWithdrawPage.vue') },
