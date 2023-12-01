@@ -1,5 +1,5 @@
 <template>
-  <q-page class="q-ma-md">
+  <q-page class="q-pa-sm">
     <PageTitle :title="pageTitle" />
 
     <div class="shadow-up-1 q-mt-sm">
