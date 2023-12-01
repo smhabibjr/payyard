@@ -1,5 +1,5 @@
 <template>
-  <q-page class="q-ma-md">
+  <q-page class="q-pa-sm">
     <page-title :title="pageTitle" />
   </q-page>
 </template>

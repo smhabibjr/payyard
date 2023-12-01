@@ -54,7 +54,7 @@ const linksList = [
     title: 'Dashboard',
     caption: 'See your revenue',
     icon: 'dashboard ',
-    link: '/#/',
+    link: '/#/dashboard',
   },
   {
     title: 'My Clients',

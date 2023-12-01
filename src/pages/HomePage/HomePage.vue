@@ -5,10 +5,11 @@
       hi htere
     </div>
   </div>
+
+  <PyFooter />
 </template>
 
 <script setup lang="ts">
-
 </script>
 
 <style lang="scss" scoped>

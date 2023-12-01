@@ -1,6 +1,6 @@
 <template>
-  <q-layout view="hHh lpR fFf">
-    <q-header elevated class="navbar">
+  <q-layout class="q-landing-page" view="hHh lpR fFf">
+    <q-header elevated class="navbar" style="background-color: transparent;">
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
@@ -24,7 +24,7 @@
 
 <style scoped>
 
-.navbar {
+.q-landing-page {
   background-color:hsla(230,41%,6%,1);
 }
 
