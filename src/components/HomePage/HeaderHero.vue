@@ -1,7 +1,7 @@
 <template>
   <div class="gpt3__header section__padding" id="home">
     <div class="gpt3__header-content">
-      <h1 class="gradient__text">Let&apos;s Build Something amazing with GPT-3 OpenAI</h1>
+      <h1 class="gradient__text">Let&apos;s Build Something amazing for Freelancers</h1>
       <p>{{ title }}</p>
 
       <div class="gpt3__header-content__input">
@@ -110,7 +110,6 @@ const title = 'Yet bed any for travelling assistance indulgence unpleasing. Not 
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-
     margin-top: 2rem;
 }
 
