@@ -1,6 +1,6 @@
 <template>
   <q-layout class="q-landing-page" view="hHh lpR fFf">
-    <q-header elevated class="navbar" style="background-color: transparent;">
+    <q-header elevated class="navbar q-pa-sm" style="background-color: transparent;">
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
@@ -8,7 +8,6 @@
           </q-avatar>
           Tele AG
         </q-toolbar-title>
-
         <q-btn outline rounded label="Sign up" />
       </q-toolbar>
     </q-header>
