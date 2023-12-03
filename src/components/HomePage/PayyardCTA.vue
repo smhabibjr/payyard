@@ -1,0 +1,102 @@
+<template>
+  <div class="gpt3__cta">
+    <div class="gpt3__cta-content">
+      <p>Request Early Access to Get Started</p>
+      <h3>Register Today & start exploring the endless possibilities.</h3>
+    </div>
+    <div class="gpt3__cta-btn">
+      <button type="button">Get Started</button>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+
+</script>
+
+<style lang="scss" scoped>
+.gpt3__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar)
+}
+
+.gpt3__cta-content {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    color: #fff;
+}
+
+.gpt3__cta-content p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.gpt3__cta-content h3 {
+    font-family: var(--font-family);
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 800;
+}
+
+.gpt3__cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 2rem;
+}
+
+.gpt3__cta-btn button {
+    background: #000;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+@media screen and (max-width: 650px) {
+    .gpt3__cta {
+        flex-direction: column;
+    }
+
+    .gpt3__cta-btn {
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__cta {
+        flex-direction: column;
+        margin: 4rem 2rem;
+    }
+
+    .gpt3__cta-content h3 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .gpt3__cta-btn button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+</style>

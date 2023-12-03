@@ -6,6 +6,10 @@
   <Brand />
   <WhatPayyard />
   <WhyPayyard />
+  <PayyardPosibility />
+  <PayyardCTA />
+  <PayyardBlog />
+  <PayyardFooter />
  </q-page>
 </template>
 
@@ -15,7 +19,10 @@ import Header from '../../components/HomePage/HeaderHero.vue';
 import Brand from '../../components/HomePage/Brand/BrandIndex.vue';
 import WhatPayyard from '../../components/HomePage/WhatPayyard.vue';
 import WhyPayyard from '../../components/HomePage/WhyPayyard.vue';
-
+import PayyardPosibility from '../../components/HomePage/PayyardPosibility.vue';
+import PayyardCTA from '../../components/HomePage/PayyardCTA.vue';
+import PayyardBlog from '../../components/HomePage/PayyardBlog.vue';
+import PayyardFooter from '../../components/HomePage/PayyardFooter.vue';
 </script>
 
 <style lang="scss" scoped>
