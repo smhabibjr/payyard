@@ -1,5 +1,3 @@
-<!-- eslint-disable max-len -->
-<!-- eslint-disable max-len -->
 <template>
   <div class="gpt3__whatgpt3 section__margin" id="wgpt3">
     <div class="gpt3__whatgpt3-feature">
