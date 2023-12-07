@@ -52,7 +52,6 @@ const featuresData = [
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-
     text-align: left;
     margin-right: 5rem;
 }
@@ -70,7 +69,6 @@ const featuresData = [
     line-height: 30px;
     font-weight: 500;
     font-family: var(--font-family);
-
     margin-top: 2rem;
 }
 

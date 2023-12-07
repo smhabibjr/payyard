@@ -20,7 +20,6 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-
     padding: 2rem;
     margin: 4rem;
     border-radius: 1rem;
@@ -30,7 +29,6 @@
 .gpt3__cta-content {
     display: flex;
     flex-direction: column;
-
     text-align: left;
     color: #fff;
 }
@@ -53,7 +51,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-left: 2rem;
 }
 
@@ -66,7 +63,6 @@
     line-height: 30px;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
-
     border: none;
     outline: none;
     cursor: pointer;

@@ -30,7 +30,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     margin-right: 2rem;
 }
 
@@ -73,7 +72,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-
     margin-bottom: 2rem;
 }
 

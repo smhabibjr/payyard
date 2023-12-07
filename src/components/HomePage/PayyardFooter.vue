@@ -50,14 +50,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background: var(--color-footer);
 }
 
 .gpt3__footer-heading {
     width: 100%;
     text-align: center;
-
     margin-bottom: 3rem;
 }
 
@@ -72,11 +70,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 1rem;
     border: 1px solid #fff;
     text-align: center;
-
     margin-bottom: 10rem;
     cursor: pointer;
 }
@@ -95,7 +91,6 @@
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-
     width: 100%;
     text-align: left;
 }
@@ -113,7 +108,6 @@
 .gpt3__footer-links_logo img {
     width: 118px;
     height: 30px;
-
     margin-bottom: 1rem;
 }
 
@@ -135,7 +129,6 @@
     line-height: 17px;
     font-family: var(--font-family);
     color: #fff;
-
     margin-bottom: 0.9rem;
 }
 
@@ -144,7 +137,6 @@
     line-height: 15px;
     font-family: var(--font-family);
     color: #fff;
-
     margin: 0.5rem 0;
     cursor: pointer;
 }

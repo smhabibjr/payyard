@@ -27,7 +27,6 @@ defineProps({
 .gpt3__blog-container_article {
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     background: var(--color-footer);
@@ -50,7 +49,6 @@ defineProps({
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding: 1rem 1.5rem;
     height: 100%;
 }
@@ -60,10 +58,8 @@ defineProps({
     font-size: 11.65px;
     font-weight: 700;
     line-height: 35px;
-
     color: #fff;
 }
-
 .gpt3__blog-container_article-content h3 {
     font-family: var(--font-family);
     font-size: 25.11px;
@@ -73,13 +69,12 @@ defineProps({
     margin-bottom: 5rem;
     cursor: pointer;
 }
-
 .gpt3__blog-container_article-content p:last-child {
     cursor: pointer;
 }
 
 @media screen and (max-width: 550px) {
-    .gpt3__blog-container_article-content h3 {
+      .gpt3__blog-container_article-content h3 {
         font-size: 18px;
         line-height: 25p;
     }

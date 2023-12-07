@@ -75,7 +75,6 @@ const education = 'At jointure ladyship an insisted so humanity he. Friendly bac
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     margin: 4rem 0 2rem;
 }
 
@@ -100,7 +99,6 @@ const education = 'At jointure ladyship an insisted so humanity he. Friendly bac
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
     margin-top: 2rem;
 }
 

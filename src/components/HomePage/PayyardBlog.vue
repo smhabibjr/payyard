@@ -43,7 +43,6 @@ import PayyardArticle from '../PayyardArticle.vue';
 .gpt3__blog-heading {
     width: 100%;
     text-align: left;
-
     margin-bottom: 5rem;
 }
 
@@ -66,7 +65,6 @@ import PayyardArticle from '../PayyardArticle.vue';
 
 .gpt3__blog-container_groupB {
     flex: 1;
-
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
@@ -93,11 +91,9 @@ import PayyardArticle from '../PayyardArticle.vue';
     .gpt3__blog-container_groupB {
         grid-template-columns: repeat(1, 1fr);
     }
-
     .gpt3__blog-container_groupA .gpt3__blog-container_PayyardArticle  {
        width: 100%;
     }
-
     .gpt3__blog-heading h1 {
         font-size: 46px;
         line-height: 52px;
@@ -109,6 +105,5 @@ import PayyardArticle from '../PayyardArticle.vue';
         font-size: 34px;
         line-height: 42px;
     }
-
 }
 </style>
