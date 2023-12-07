@@ -31,12 +31,10 @@ defineProps({
     display: flex;
     flex-direction: column;
     background: var(--color-footer);
-}
 .gpt3__blog-container_article:hover {
-        box-shadow: 0 0 10px 5px rgba(245, 241, 241, 0.3) inset, 0 0 20px 10px rgba(245, 131, 131, 0.7);
-        transition: box-shadow 0.3s ease-in-out;
-    }
-
+    box-shadow: 0 0 10px 5px rgba(245, 241, 241, 0.3) inset, 0 0 20px 10px rgba(245, 131, 131, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+  }
 .gpt3__blog-container_article-image {
     width: 100%;
     height: 100%;
