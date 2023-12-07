@@ -40,12 +40,10 @@ defineProps({
     height: 100%;
     background: var(--color-bg);
 }
-
 .gpt3__blog-container_article-image img {
     width: 100%;
     height: 100%;
 }
-
 .gpt3__blog-container_article-content {
     display: flex;
     flex-direction: column;
@@ -53,7 +51,6 @@ defineProps({
     padding: 1rem 1.5rem;
     height: 100%;
 }
-
 .gpt3__blog-container_article-content p {
     font-family: var(--font-family);
     font-size: 11.65px;
@@ -73,7 +70,6 @@ defineProps({
 .gpt3__blog-container_article-content p:last-child {
     cursor: pointer;
 }
-
 @media screen and (max-width: 550px) {
       .gpt3__blog-container_article-content h3 {
         font-size: 18px;
