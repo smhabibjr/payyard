@@ -40,7 +40,6 @@ import PayyardArticle from '../PayyardArticle.vue';
     display: flex;
     flex-direction: column;
 }
-
 .gpt3__blog-heading {
     width: 100%;
     text-align: left;
