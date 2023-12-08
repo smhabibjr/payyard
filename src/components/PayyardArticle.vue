@@ -67,6 +67,7 @@ defineProps({
     margin-bottom: 5rem;
     cursor: pointer;
 }
+
 .gpt3__blog-container_article-content p:last-child {
     cursor: pointer;
 }
