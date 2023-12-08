@@ -1,6 +1,6 @@
 <!-- eslint-disable max-len -->
 <template>
- <q-page>
+ <q-page class="gradient__bg">
   <Navbar />
   <Header />
   <Brand />

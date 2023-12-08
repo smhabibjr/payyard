@@ -1,5 +1,5 @@
 <template>
-  <q-layout class="gradient__bg" view="hHh lpR fFf">
+  <q-layout class="" view="hHh lpR fFf">
     <q-page-container>
       <router-view />
     </q-page-container>

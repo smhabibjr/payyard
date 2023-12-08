@@ -5,7 +5,7 @@
       <h3>Register Today & start exploring the endless possibilities.</h3>
     </div>
     <div class="gpt3__cta-btn">
-      <button type="button">Get Started</button>
+      <q-btn rounded color="dark" label="Get Started" to="/login" />
     </div>
   </div>
 </template>
@@ -54,21 +54,6 @@
     margin-left: 2rem;
 }
 
-.gpt3__cta-btn button {
-    background: #000;
-    color: #fff;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    min-width: 150px;
-}
-
 @media screen and (max-width: 650px) {
     .gpt3__cta {
         flex-direction: column;
@@ -88,11 +73,6 @@
     .gpt3__cta-content h3 {
         font-size: 18px;
         line-height: 32px;
-    }
-
-    .gpt3__cta-btn button {
-        font-size: 14px;
-        line-height: 28px;
     }
 }
 </style>

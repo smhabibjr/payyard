@@ -1,5 +1,5 @@
 <template>
-  <q-header elevated style="background-color: transparent;">
+  <q-header elevated class="gradient__bg">
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
@@ -8,7 +8,7 @@
           Tele AG
         </q-toolbar-title>
 
-        <q-btn outline rounded label="Sign up" />
+        <q-btn outline rounded label="Sign up" to="/login" />
       </q-toolbar>
     </q-header>
 </template>
