@@ -6,7 +6,7 @@
     </q-item-section>
 
     <q-item-label class="column flex-center" header>
-      <div>Md Habibur Rahman Habib</div>
+      <div>Junior Adele</div>
       <div>Payyard: 01568563</div>
     </q-item-label>
 </template>
