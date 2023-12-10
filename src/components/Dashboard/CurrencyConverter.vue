@@ -3,12 +3,22 @@
     <div class="row">
       <div class="col col-xs-12 col-sm-6 col-md-6">
         <q-card-section>
-          <q-select outlined v-model="selectedSendingValue" :options="sendingOptions" label="You send" />
+          <q-select outlined
+            v-model="selectedSendingValue"
+            :options="sendingOptions"
+            label="You send"
+            @update:model-value="changeSendingCurrency()"
+          />
         </q-card-section>
       </div>
       <div class="col col-xs-12 col-sm-6 col-md-6">
         <q-card-section>
-          <q-select outlined v-model="selectedrecipientValue" :options="recipientOptions" label="Recipient gets" />
+          <q-select outlined
+          v-model="selectedReceiveValue"
+          :options="recipientOptions"
+          label="Recipient gets"
+          @update:model-value="changeReceiveCurrency()"
+        />
         </q-card-section>
       </div>
     </div>
@@ -35,7 +45,7 @@
     <div class="row">
       <div class="col col-xs-4 col-sm-6 col-md-6">
         <q-card-section>
-          <q-btn @click="printDocument" icon="print" label="Print" />
+          <q-btn icon="print" label="Print" />
         </q-card-section>
       </div>
       <div class="col col-xs-8 col-sm-6 col-md-6 justify-end flex">
@@ -50,12 +60,23 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const selectedSendingValue = ref(null);
-const selectedrecipientValue = ref(null);
+const selectedSendingValue = ref('USD');
+const selectedReceiveValue = ref('BDT');
 const inputedAmount = ref('');
 const receivedAmount = ref('');
 
-const sendingOptions = ['Euro', 'USD'];
+const sendingOptions = [
+  { label: 'USD', value: 110.09 },
+  { label: 'Euro', value: 118.61 },
+];
 const recipientOptions = ['BDT', 'PAK'];
+
+function changeSendingCurrency() {
+  console.log(selectedSendingValue.value.value);
+}
+
+function changeReceiveCurrency() {
+  console.log(selectedReceiveValue.value);
+}
 
 </script>
