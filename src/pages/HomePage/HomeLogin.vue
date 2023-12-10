@@ -4,9 +4,9 @@
   >
     <div class="column">
       <div class="row">
-        <q-card square dark class="q-pa-md q-ma-none no-shadow bg-grey-10" style="width:320px;">
-          <q-card-section class="q-mt-xl q-mb-md">
-            <p class="text-weight-bolder text-grey">Login to your account</p>
+        <q-card square dark class="q-pa-md q-ma-none no-shadow bg-grey-10" style="width:400px;">
+          <q-card-section>
+            <lo-go />
           </q-card-section>
           <q-card-section>
             <q-form class="q-gutter-md">
@@ -25,7 +25,7 @@
           <q-card-actions>
             <div class="row full-width items-center">
               <div class="col-6">
-                <q-btn outline rounded size="md" color="red-4" class="full-width text-white" label="Sign In" />
+                <q-btn outline rounded size="md" class="full-width text-white" label="Sign In" />
               </div>
               <div class="col-6">
                 <p class="text-no-wrap text-grey text-caption text-right">Forgot password?</p>
@@ -33,7 +33,7 @@
             </div>
           </q-card-actions>
           <q-card-section>
-            <p class="text-caption text-weight-light text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper laoreet placerat. Nullam semper auctor justo, rutrum posuere odio vulputate nec.</p>
+            <p class="text-caption text-weight-light text-grey">We don't share your email with others.</p>
           </q-card-section>
         </q-card>
       </div>
@@ -43,8 +43,12 @@
 
 <script lang="ts">
 import { ref } from 'vue';
+import LoGo from 'src/components/LoGo.vue';
 
 export default {
+  components: {
+    LoGo,
+  },
   setup() {
     const email = ref('');
     const password = ref('');
@@ -58,6 +62,7 @@ export default {
       email,
       password,
       login,
+      LoGo,
     };
   },
 };
