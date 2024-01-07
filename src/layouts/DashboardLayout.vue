@@ -29,7 +29,7 @@
       <q-list>
         <ProfileAvator />
         <EssentialLink
-          v-for="link in essentialLinks"
+          v-for="link in linksList"
           :key="link.title"
           v-bind="link"
         />
@@ -43,11 +43,11 @@
   </q-layout>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from 'vue';
-import EssentialLink from 'components/EssentialLink.vue';
-import DarkLightMode from 'src/components/DarkLightMode.vue';
-import ProfileAvator from 'src/components/ProfileAvator.vue';
+<script setup lang="ts">
+import { ref } from 'vue';
+import DarkLightMode from 'src/components/Shared/DarkLightMode.vue';
+import ProfileAvator from 'src/components/Shared/ProfileAvator.vue';
+import EssentialLink from '../components/Shared/EssentialLink.vue';
 
 const linksList = [
   {
@@ -66,7 +66,7 @@ const linksList = [
     title: 'Send Invoice',
     caption: 'Create & send invoice to clients',
     icon: 'description',
-    link: '#/new-invoice',
+    link: '#/create-invoice',
   },
   {
     title: 'Withdraw to Bank',
@@ -81,12 +81,6 @@ const linksList = [
     link: '#/community-forum',
   },
   {
-    title: 'Blog',
-    caption: 'Read & Write Blog',
-    icon: 'create',
-    link: '#/blog/',
-  },
-  {
     title: 'Settings',
     caption: '',
     icon: 'settings',
@@ -96,31 +90,14 @@ const linksList = [
     title: 'Logout',
     caption: '',
     icon: 'exit_to_app',
-    link: 'https://forum.quasar.dev',
+    link: '',
   },
 ];
 
-export default defineComponent({
-  name: 'DashboardLayout',
+const leftDrawerOpen = ref(false);
 
-  components: {
-    EssentialLink,
-    DarkLightMode,
-    ProfileAvator,
-  },
+const toggleLeftDrawer = () => {
+  leftDrawerOpen.value = !leftDrawerOpen.value;
+};
 
-  setup() {
-    const leftDrawerOpen = ref(false);
-
-    const toggleLeftDrawer = () => {
-      leftDrawerOpen.value = !leftDrawerOpen.value;
-    };
-
-    return {
-      essentialLinks: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer,
-    };
-  },
-});
 </script>

@@ -13,12 +13,12 @@ const routes: RouteRecordRaw[] = [
     path: '/',
     component: () => import('layouts/DashboardLayout.vue'),
     children: [
-      { path: 'dashboard', component: () => import('pages/dashboardPages/DashboardPage.vue') },
-      { path: 'my-clients', component: () => import('pages/dashboardPages/MyClientsPage.vue') },
-      { path: 'new-invoice', component: () => import('pages/dashboardPages/NewInvoicePage.vue') },
-      { path: 'cash-withdraw', component: () => import('pages/dashboardPages/CashWithdrawPage.vue') },
-      { path: 'community-forum', component: () => import('pages/dashboardPages/CommunityForumPage.vue') },
-      { path: 'settings', component: () => import('pages/dashboardPages/SettingsPage.vue') },
+      { path: 'dashboard', component: () => import('pages/Dashboard/DashboardIndex.vue') },
+      { path: 'my-clients', component: () => import('pages/Dashboard/MyClients.vue') },
+      { path: 'create-invoice', component: () => import('pages/Dashboard/CreateInvoice.vue') },
+      { path: 'cash-withdraw', component: () => import('pages/Dashboard/CashWithdraw.vue') },
+      { path: 'community-forum', component: () => import('pages/Dashboard/CommunityForum.vue') },
+      { path: 'settings', component: () => import('pages/Dashboard/UserSetting.vue') },
     ],
   },
   {

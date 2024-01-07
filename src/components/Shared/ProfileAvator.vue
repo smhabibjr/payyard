@@ -11,15 +11,5 @@
     </q-item-label>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'ProfileAvator',
-  setup() {
-    return {
-
-    };
-  },
-});
+<script setup lang="ts">
 </script>

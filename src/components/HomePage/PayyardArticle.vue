@@ -1,7 +1,7 @@
 <template>
   <div class="gpt3__blog-container_article">
     <div class="gpt3__blog-container_article-image">
-      <img src="../assets/images/blog01.png" alt="blog_image" />
+      <img src="../../assets/images/blog01.png" alt="blog_image" />
     </div>
     <div class="gpt3__blog-container_article-content">
       <div>

@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import PayyardFeature from '../Feature/PayyardFeature.vue';
+import PayyardFeature from './Feature/PayyardFeature.vue';
 
 const featureText = 'The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.';
 const featuresData = [

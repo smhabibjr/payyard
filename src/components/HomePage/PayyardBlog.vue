@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import PayyardArticle from '../PayyardArticle.vue';
+import PayyardArticle from './PayyardArticle.vue';
 </script>
 
 <style lang="scss" scoped>

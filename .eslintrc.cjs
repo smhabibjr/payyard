@@ -70,10 +70,11 @@ module.exports = {
     'no-void': 'off',
     'no-nested-ternary': 'off',
     'max-classes-per-file': 'off',
-    'max-len':'off',
-    
+    'max-len': 'off',
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
 
     'import/first': 'off',
     'import/named': 'error',

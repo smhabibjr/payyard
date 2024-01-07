@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import PageTitle from 'src/components/PageTitle.vue';
+import PageTitle from 'src/components/Shared/PageTitle.vue';
 import CurrencyConverter from 'src/components/Dashboard/CurrencyConverter.vue';
 
 const pageTitle = ref('Transfer Calculator');
