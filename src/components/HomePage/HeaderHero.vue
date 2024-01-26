@@ -1,46 +1,51 @@
 <template>
-  <div class="gpt3__header section__padding" id="home">
-    <div class="gpt3__header-content">
-      <h1 class="gradient__text">Let&apos;s Build Something amazing for Freelancers</h1>
-      <p>{{ title }}</p>
-
-      <div class="gpt3__header-content__input">
-        <input type="email" placeholder="Your Email Address" />
-        <button type="button">Get Started</button>
-      </div>
-
-      <div class="gpt3__header-content__people">
-        <img src='../../assets/images/people.png' />
-        <p>1,600 people requested access a visit in last 24 hours</p>
+  <div class="gradient__bg_center">
+    <div class="row flex flex-center q-pa-lg q-py-xl ">
+    <div class="col-xs-12 col-sm-12 col-md-8 flex flex-center">
+        <div class="header-content">
+            <h1 class="gradient__text text-center">Let&apos;s get paid using TelePay</h1>
+            <p class=" text-center">{{ title }}</p>
+            <div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <div class="row flex flex-center">
+    <div class="col-xs-12 col-sm-12 col-md-8 flex flex-center">
+      <div>
+        <q-btn
+            rounded
+            size="22px"
+            class="q-px-xl q-py-xs"
+            color="purple"
+            label="Get access today"
+          />
       </div>
     </div>
-
-    <div class="gpt3__header-image">
-      <img src='../../assets/images/ai.png' />
+  </div>
+  <div class="row flex flex-center">
+    <div class="col-xs-12 col-md-12 col-lg-8 flex flex-center">
+      <div class="header-content">
+    <h1 class="gradient__text">Explained in 120 seconds</h1>
+    <div class="video-container flex flex-center">
+      <iframe src="https://www.youtube.com/embed/HisbShlgVuk?si=tSN2ZSMTwPznv7Cv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+  </div>
+    </div>
+  </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const title = 'Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.';
+const title = 'The missing platform to get paid for Freelancers';
 </script>
 
 <style lang="scss" scoped>
-.gpt3__header {
-    display: flex;
-    flex-direction: row;
+.border{
+  border: 1px solid red;
 }
 
-.gpt3__header-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-right: 5rem;
-}
-
-.gpt3__header-content h1 {
+.header-content h1 {
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 62px;
@@ -48,7 +53,7 @@ const title = 'Yet bed any for travelling assistance indulgence unpleasing. Not 
     letter-spacing: -0.04em;
 }
 
-.gpt3__header-content p {
+.header-content p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
@@ -57,123 +62,15 @@ const title = 'Yet bed any for travelling assistance indulgence unpleasing. Not 
     margin-top: 1.5rem;
 }
 
-.gpt3__header-content__input {
-    width: 100%;
-    margin: 2rem 0 1rem;
-    display: flex;
-    flex-direction: row;
+.video-container iframe {
+  width: 100%;
+  height: 350;
 }
 
-.gpt3__header-content__input input {
-    flex: 2;
-    width: 100%;
-    min-height: 50px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    background: var(--color-footer);
-    border: 2px solid var(--color-footer);
-    padding: 0 1rem;
-    outline: none;
-    color: #fff;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-.gpt3__header-content__input button {
-    flex: 0.6;
-    width: 100%;
-    min-height: 50px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    background: #FF4820;
-    border: 2px solid #FF4820;
-    padding: 0 1rem;
-    color: #fff;
-    cursor: pointer;
-    outline: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-.gpt3__header-content__people {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 2rem;
-}
-.gpt3__header-content__people img {
-    width: 181.79px;
-    height: 38px;
-}
-
-.gpt3__header-content__people p {
-    margin: 0 0 0 1rem;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 38px;
-    color: #fff;
-    text-align: center;
-}
-.gpt3__header-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gpt3__header-image img {
-    width: 100%;
-    height: 100%;
-}
-@media screen and (max-width: 1050px) {
-    .gpt3__header {
-        flex-direction: column;
-    }
-
-    .gpt3__header-content {
-        margin: 0 0 3rem;
-    }
-}
-@media screen and (max-width: 650px) {
-    .gpt3__header-content h1 {
-        font-size: 48px;
-        line-height: 60px;
-    }
-    .gpt3__header-content p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .gpt3__header-content__people {
-        flex-direction: column;
-    }
-    .gpt3__header-content__people p {
-        margin: 0;
-    }
-    .gpt3__header-content__input input,
-    .gpt3__header-content__input button {
-        font-size: 16px;
-        line-height: 24px;
-    }
-}
-
-@media screen and (max-width: 490px) {
-    .gpt3__header-content h1 {
-        font-size: 36px;
-        line-height: 48px;
-    }
-    .gpt3__header-content p {
-        font-size: 14px;
-        line-height: 24px;
-    }
-    .gpt3__header-content__input input,
-    .gpt3__header-content__input button {
-        font-size: 12px;
-        line-height: 16px;
-    }
+.video-container:hover {
+  border: 2px solid;
+  border-image-source: linear-gradient(to right, red, purple);
+  border-image-slice: 1;
 }
 
 </style>
