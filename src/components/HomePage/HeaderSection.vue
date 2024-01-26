@@ -1,6 +1,6 @@
 <template>
   <div class="gradient__bg_center">
-    <div class="row flex flex-center q-pa-lg q-py-xl ">
+    <div class="row flex flex-center q-pa-lg q-py-xl">
       <div class="col-xs-12 col-sm-12 col-md-8 flex flex-center">
         <div class="header-content">
           <h1 class="gradient__text text-center">Let&apos;s get paid using TelePay</h1>
@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-    <div class="row flex flex-center">
+    <div class="row flex flex-center q-mb-lg">
       <div class="col-xs-12 col-sm-12 col-md-8 flex flex-center">
         <div>
           <q-btn
@@ -29,7 +29,10 @@ const title = 'The missing platform to get paid for Freelancers';
 </script>
 
 <style lang="scss" scoped>
-  .header-content h1 {
+.border {
+  border: solid 1px #ccc;
+}
+.header-content h1 {
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 62px;
