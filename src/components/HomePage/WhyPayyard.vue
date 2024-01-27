@@ -1,5 +1,13 @@
 <template>
-  <div class="gpt3__features section__padding" id="features">
+  <div class="row flex flex-center q-pa-lg q-qt-xl">
+    <div class="col-xs-12 col-sm-12 col-md-8 flex flex-center">
+      <div class="header-content">
+        <h1 class="gradient__text text-center">What is TelePay</h1>
+        <p class=" text-center">{{ caption }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="gpt3__features section__padding gradient__bg_center">
     <div class="gpt3__features-heading">
       <h1 class="gradient__text"> {{ featureText }} </h1>
       <p>Request Early Access to Get Started</p>
@@ -17,6 +25,7 @@
 <script setup lang="ts">
 import PayyardFeature from './Feature/PayyardFeature.vue';
 
+const caption = 'Cider is a new cross-platform Apple Music experience built on Vue.js and written from the ground up with performance in mind. 🚀';
 const featureText = 'The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.';
 const featuresData = [
   {
@@ -39,6 +48,24 @@ const featuresData = [
 </script>
 
 <style lang="scss" scoped>
+.border {
+  border: 1px solid red;
+}
+.header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+.header-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
 .gpt3__features {
     width: 100%;
     display: flex;
