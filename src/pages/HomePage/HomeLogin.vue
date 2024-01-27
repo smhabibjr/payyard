@@ -43,7 +43,7 @@
 
 <script lang="ts">
 import { ref } from 'vue';
-import LoGo from 'src/components/LoGo.vue';
+import LoGo from 'src/components/Shared/LoGo.vue';
 
 export default {
   components: {
