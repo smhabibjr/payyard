@@ -52,8 +52,13 @@
   height: 100%;
 }
 .video-container:hover {
-  border: 1px solid;
+  border: 2px solid;
   border-image-source: linear-gradient(to right, rgb(228, 14, 14), rgb(220, 11, 220));
+  border-image-slice: 1;
+}
+.video-container {
+  border: 2px solid;
+  border-image-source: linear-gradient(to right,rgb(220, 11, 220), rgb(228, 14, 14));
   border-image-slice: 1;
 }
 </style>
