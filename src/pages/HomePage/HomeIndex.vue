@@ -1,5 +1,6 @@
 <template>
- <q-page>
+ <q-page class="bg-primary">
+  <NavBar />
   <HeaderHero />
   <ExplainedVideo />
   <WhyPayyard />
@@ -9,6 +10,7 @@
  </q-page>
 </template>
 <script setup lang="ts">
+import NavBar from 'src/components/HomePage/NavBar.vue';
 import ExplainedVideo from 'src/components/HomePage/ExplainedVideo.vue';
 import HeaderHero from 'src/components/HomePage/HeaderHero.vue';
 import WhyPayyard from 'src/components/HomePage/WhyPayyard.vue';

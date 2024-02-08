@@ -4,7 +4,7 @@
       <div class="col-xs-12 col-sm-12 col-md-8 flex flex-center">
         <div class="header-content">
           <h2 class="text-center">
-            <span class="text-white">Explained</span>
+            <span class="gradient__text">Explained</span>
             <span class="gradient__text"> in 120 seconds</span>
           </h2>
         </div>
