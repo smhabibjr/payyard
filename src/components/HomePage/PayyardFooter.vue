@@ -4,14 +4,14 @@
       <h1 class="gradient__text">Do you want to step in to the future before others</h1>
     </div>
 
-    <div class="gpt3__footer-btn">
-      <p>Request Early Access</p>
-    </div>
+    <q-btn class="gpt3__footer-btn" to="/login">
+      <p to="/login">Request Early Access</p>
+    </q-btn>
 
     <div class="gpt3__footer-links">
       <div class="gpt3__footer-links_logo">
-        <img src="../../assets/images/logo.svg" alt="gpt3_logo" />
-        <p>Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
+        <img src="../../assets/logo/logo-payyard-white.png" alt="gpt3_logo" />
+        <p>The secure platform to cash out your PayPal balance and Digital Currency to Fiat</p>
       </div>
       <div class="gpt3__footer-links_div">
         <h4>Links</h4>
@@ -106,8 +106,6 @@
 }
 
 .gpt3__footer-links_logo img {
-    width: 118px;
-    height: 30px;
     margin-bottom: 1rem;
 }
 

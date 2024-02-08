@@ -49,6 +49,10 @@ a {
   padding: 4rem 6rem;
 }
 
+.section__padding__navbar {
+  padding: 1rem 6rem;
+}
+
 .section__margin {
   margin: 4rem 6rem;
 }
@@ -88,6 +92,9 @@ a {
   .section__margin {
     margin: 4rem;
   }
+  .section__padding__navbar {
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -97,5 +104,8 @@ a {
 
   .section__margin {
     margin: 4rem 2rem;
+  }
+  .section__padding__navbar {
+    padding: 1rem 1rem;
   }
 }

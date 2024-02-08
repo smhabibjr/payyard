@@ -1,12 +1,12 @@
 <template>
   <div>
-    <q-header elevated class="q-pa-md ">
+    <q-header elevated class="section__padding__navbar">
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+            <img src="~assets/logo/logo.png">
           </q-avatar>
-          TelePay
+          Payyard.io
         </q-toolbar-title>
 
         <q-btn outline rounded label="Sign up" to="/login" />

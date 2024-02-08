@@ -18,6 +18,7 @@
                 class="q-px-xl q-py-xs"
                 color="purple"
                 label="Get access today"
+                to="/login"
               />
           </div>
         </div>
