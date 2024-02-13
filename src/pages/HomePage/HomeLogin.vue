@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-center bg-primary">
-    <q-card class="q-pa-md bg-white" style="width: 400px;">
+    <q-card class="q-pa-md bg-white text-dark" style="width: 400px;">
       <q-card-section>
         <div class="text-center q-px-lg q-pb-lg">
           <q-img src="~assets/logo/logo-payyard.png" />
