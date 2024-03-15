@@ -1,3 +1,4 @@
+This project is live on https://telepay.netlify.app/#/
 # A payment solution for freelancers.
 
 A Quasar Project
